@@ -3,16 +3,6 @@ import React from 'react';
 import {TouchableOpacity, Image, View, StyleSheet, Text} from 'react-native';
 
 const Header = () => {
-  // const openDrawer = () => {
-  //   Navigation.mergeOptions('sideMenu', {
-  //     sideMenu: {
-  //       left: {
-  //         visible: true,
-  //       },
-  //     },
-  //   });
-  // };
-
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.menuIcon}>
@@ -32,26 +22,27 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: 'white',
     alignItems: 'center',
-    padding: 20,
+    padding: 10,
   },
   menuIcon: {
-    marginRight: 10,
+    marginLeft: 5,
   },
   icon: {
-    width: 35,
-    height: 35,
+    width: 25,
+    height: 25,
   },
   locationContainer: {
     flex: 1,
     alignItems: 'center',
+    marginLeft: -15,
   },
   locationLabel: {
-    fontSize: 20,
+    fontSize: 15,
     fontWeight: 'bold',
     color: 'black',
   },
   locationText: {
-    fontSize: 30,
+    fontSize: 20,
     color: 'black',
   },
 });

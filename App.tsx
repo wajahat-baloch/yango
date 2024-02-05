@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet, SafeAreaView} from 'react-native';
 import Header from './components/Header';
 import RideDetails from './components/RideDetails';
+import HomeScreen from './screens/HomeScreen';
 
 const App: React.FC = () => {
   return (
@@ -10,7 +11,8 @@ const App: React.FC = () => {
       <View>
         <Text style={styles.title}>Welcome to React Native!</Text>
       </View>
-      <RideDetails />
+      {/* <RideDetails /> */}
+      <HomeScreen />
     </SafeAreaView>
   );
 };
@@ -18,10 +20,9 @@ const App: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
     alignItems: 'center',
     flexDirection: 'column',
-    justifyContent: 'space-between',
   },
   title: {
     fontSize: 20,
