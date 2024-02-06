@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import MapView, {Marker} from 'react-native-maps';
 import {View, StyleSheet, PermissionsAndroid, Platform} from 'react-native';
 import Geolocation from 'react-native-geolocation-service';
-
+import RideDetails from './RideDetails';
 const Map = props => {
   const [currentLocation, setCurrentLocation] = useState(null);
 
@@ -72,6 +72,9 @@ const Map = props => {
           />
         )}
       </MapView>
+      <View style={styles.rideDetailsContainer}>
+        <RideDetails />
+      </View>
     </View>
   );
 };
@@ -84,6 +87,17 @@ const styles = StyleSheet.create({
   },
   map: {
     ...StyleSheet.absoluteFillObject,
+  },
+  rideDetailsContainer: {
+    backgroundColor: 'white',
+    position:'absolute',
+    bottom: 0,
+    padding: 20,
+    borderTopRightRadius: 30,
+    borderTopLeftRadius: 30,
+    width: '100%',
+    height: '50%',
+    zIndex: 1,
   },
 });
 

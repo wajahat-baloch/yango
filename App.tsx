@@ -9,6 +9,7 @@ const App: React.FC = () => {
     <SafeAreaView style={styles.container}>
       <Header />
       <HomeScreen />
+
     </SafeAreaView>
   );
 };

@@ -10,9 +10,7 @@ const HomeScreen = () => {
       <View style={styles.mapContainer}>
         <Map style={styles.map} />
       </View>
-      <View style={styles.rideDetailsContainer}>
-        <RideDetails />
-      </View>
+      
     </SafeAreaView>
   );
 };
@@ -32,15 +30,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  rideDetailsContainer: {
-    backgroundColor: 'white',
-    padding: 20,
-    borderTopRightRadius: 30,
-    borderTopLeftRadius: 30,
-    width: '100%',
-    height: '50%',
-    zIndex: 1,
-  },
+  
 });
 
 export default HomeScreen;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 
 const Car1 = require('../images/car1.png');
 const Car = require('../images/car.png');
@@ -8,7 +8,7 @@ const Location = require('../images/location.jpg');
 const RideDetails = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.first}>
+      <TouchableOpacity style={styles.first}>
         <View style={styles.firstInner}>
           <Image source={Car1} style={styles.image} />
           <Text style={styles.firstInnerText}>Where to?</Text>
@@ -16,11 +16,11 @@ const RideDetails = () => {
         <View style={styles.firstInnerBox}>
           <Text style={styles.firstInner2}>→</Text>
         </View>
-      </View>
+      </TouchableOpacity>
 
       {/* second */}
       <View style={styles.second}>
-        <View style={styles.second1}>
+        <TouchableOpacity style={styles.second1}>
           <View>
             <Text style={styles.second1Text}>Expo Center</Text>
             <View style={styles.secondBox2}>
@@ -28,9 +28,9 @@ const RideDetails = () => {
               <Image source={Location} style={styles.secondBox2Image2} />
             </View>
           </View>
-        </View>
+        </TouchableOpacity>
 
-        <View style={styles.second2}>
+        <TouchableOpacity style={styles.second2}>
           <View>
             <Text style={styles.second2Text}>Expo Center</Text>
             <View style={styles.secondBox3}>
@@ -38,12 +38,12 @@ const RideDetails = () => {
               <Image source={Location} style={styles.secondBox3Image2} />
             </View>
           </View>
-        </View>
+        </TouchableOpacity>
       </View>
 
       {/* third */}
       <View style={styles.third}>
-        <View style={styles.third1}>
+        <TouchableOpacity style={styles.third1}>
           <View>
             <Text style={styles.third2Text}>Expo Center</Text>
             <View style={styles.thirdBox3}>
@@ -51,9 +51,9 @@ const RideDetails = () => {
               <Image source={Location} style={styles.thirdBox3Image2} />
             </View>
           </View>
-        </View>
+        </TouchableOpacity>
 
-        <View style={styles.third2}>
+        <TouchableOpacity style={styles.third2}>
           <View>
             <Text style={styles.third2Text}>Expo Center</Text>
             <View style={styles.thirdBox3}>
@@ -61,7 +61,7 @@ const RideDetails = () => {
               <Image source={Location} style={styles.thirdBox3Image2} />
             </View>
           </View>
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -143,10 +143,12 @@ const styles = StyleSheet.create({
   secondBox2Image1: {
     height: 35, // Set the height as needed
     width: 45, // Set the width as needed
+    marginTop: 17,
   },
   secondBox2Image2: {
     height: 35, // Set the height as needed
     width: 35, // Set the width as needed
+    marginTop: 17,
   },
 
   second2: {
