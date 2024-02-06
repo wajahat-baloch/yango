@@ -72,9 +72,8 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
     backgroundColor: 'white',
-    padding: 1,
     justifyContent: 'space-evenly',
-    gap: 5,
+    gap: 8,
   },
   first: {
     backgroundColor: '#cfcfcf',
